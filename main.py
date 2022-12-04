@@ -4,12 +4,21 @@ from flet import *
 
 
 class App(UserControl):
+
     def build(self):
+        t = ListView(expand=True, auto_scroll=True,spacing=20,padding=40)
+        for x in range(60):
+            t.controls.append(
+                ElevatedButton(f"ADD  {x}")
+            )
         return Container(
             content=Row(
+                width=400,
+                height=500,
                 controls=[
-                  Text('this is a first time to the main while')
-                ]
+                  t,
+                ],
+
             )
         )
 
