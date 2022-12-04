@@ -19,7 +19,7 @@ class App(UserControl):
                   Tabs(
                       tabs=[
                           Tab(
-                              text="Add",
+                              text="Add"
                           )
                       ]
                   ),
