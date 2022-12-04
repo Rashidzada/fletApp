@@ -16,7 +16,15 @@ class App(UserControl):
                 width=400,
                 height=500,
                 controls=[
+                  Tabs(
+                      tabs=[
+                          Tab(
+                              text="Add",
+                          )
+                      ]
+                  ),
                   t,
+
                 ],
 
             )
